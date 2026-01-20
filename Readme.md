@@ -11,8 +11,9 @@ A simple local AI app that lets you query a language model using custom facts st
 - Custom knowledge injected at runtime (no fine-tuning)  
 - Minimal Gradio-based web UI  
 
+---
 
-Steps (Enter the code in your terminal)
+## Steps 
 
 ## Create and activate virtual environment
 python3 -m venv .venv
@@ -30,6 +31,7 @@ Exit with Ctrl + D
 python3 app.py
 Open the local Gradio URL shown in the terminal (usually http://127.0.0.1:7860)
 
+---
 
 ## 📄 Knowledge Source
 knowledge.txt contains all custom facts
