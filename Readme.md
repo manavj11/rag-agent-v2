@@ -1,27 +1,47 @@
-Simple app that runs locally on your system and you can query after adding some facts in a supporting file called knowledge.txt
+# 🧠 Local RAG AI Agent / Knowledge App
+
+A simple local AI app that lets you query a language model using custom facts stored in a text file. All processing runs locally—no cloud APIs or external services.
+
+---
+
+## ✨ Overview
+
+- Fully offline, on-device AI using Ollama  
+- Lightweight, quantized LLM suitable for consumer hardware  
+- Custom knowledge injected at runtime (no fine-tuning)  
+- Minimal Gradio-based web UI  
+
 
 ## Steps (Enter the code in your terminal)
-- Venv Creation - python3 -m venv .venv
-  - source .venv/bin/activate      
-- Req: pip install -r requirements.txt   
-- Ollama pull and test: ollama pull llama3.2:1b
-  - ollama run llama3.2:1b
-  - Ctrl+D                        
-- Run App - python3 app.py
-- Open browser and test!
 
-🧠 AI Concepts Demonstrated
+## Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
 
-On-Device AI: Processing happens locally; no data is sent to external servers (OpenAI/Google).
+## Install dependencies
+pip install -r requirements.txt
 
-Quantization: Utilizing a 1-billion parameter model (Llama 3.2 1B) optimized for consumer hardware.
+## Pull and test model
+ollama pull llama3.2:1b
+ollama run llama3.2:1b
+Exit with Ctrl + D
 
-Context Stuffing: Passing local file content into the LLM prompt to provide custom knowledge without "fine-tuning."
+## Run app
+python3 app.py
+Open the local Gradio URL shown in the terminal (usually http://127.0.0.1:7860)
 
-📂 Project Structure
 
+## 📄 Knowledge Source
+knowledge.txt contains all custom facts
+File contents are injected into the LLM prompt on each query
+
+## 🧠 AI Concepts Demonstrated
+On-Device AI: All inference runs locally
+Quantization: Uses Llama 3.2 1B for efficient local execution
+Context Stuffing: Prompt-based knowledge injection without fine-tuning
+
+
+## 📂 Project Structure
 app.py: The Python logic and Gradio UI.
-
 knowledge.txt: Your local "database."
-
 .gitignore: Prevents large system files (like .venv) from being uploaded to GitHub.
