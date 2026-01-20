@@ -16,19 +16,19 @@ A simple local AI app that lets you query a language model using custom facts st
 ## Steps 
 
 ## Create and activate virtual environment
-python3 -m venv .venv
+python3 -m venv .venv\
 source .venv/bin/activate
 
 ## Install dependencies
 pip install -r requirements.txt
 
 ## Pull and test model
-ollama pull llama3.2:1b
-ollama run llama3.2:1b
+ollama pull llama3.2:1b\
+ollama run llama3.2:1b\
 Exit with Ctrl + D
 
 ## Run app
-python3 app.py
+python3 app.py\
 Open the local Gradio URL shown in the terminal (usually http://127.0.0.1:7860)
 
 ---
