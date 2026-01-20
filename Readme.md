@@ -12,7 +12,7 @@ A simple local AI app that lets you query a language model using custom facts st
 - Minimal Gradio-based web UI  
 
 
-## Steps (Enter the code in your terminal)
+Steps (Enter the code in your terminal)
 
 ## Create and activate virtual environment
 python3 -m venv .venv
