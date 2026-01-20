@@ -34,16 +34,16 @@ Open the local Gradio URL shown in the terminal (usually http://127.0.0.1:7860)
 ---
 
 ## 📄 Knowledge Source
-knowledge.txt contains all custom facts
+knowledge.txt contains all custom facts\
 File contents are injected into the LLM prompt on each query
 
 ## 🧠 AI Concepts Demonstrated
-On-Device AI: All inference runs locally
-Quantization: Uses Llama 3.2 1B for efficient local execution
+On-Device AI: All inference runs locally\
+Quantization: Uses Llama 3.2 1B for efficient local execution\
 Context Stuffing: Prompt-based knowledge injection without fine-tuning
 
 
 ## 📂 Project Structure
-app.py: The Python logic and Gradio UI.
-knowledge.txt: Your local "database."
+app.py: The Python logic and Gradio UI.\
+knowledge.txt: Your local "database."\
 .gitignore: Prevents large system files (like .venv) from being uploaded to GitHub.
