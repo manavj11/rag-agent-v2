@@ -11,8 +11,6 @@ A simple local AI app that lets you query a language model using custom facts st
 - Custom knowledge injected at runtime (no fine-tuning)  
 - Minimal Gradio-based web UI  
 
----
-
 ## Steps 
 
 ## Create and activate virtual environment
